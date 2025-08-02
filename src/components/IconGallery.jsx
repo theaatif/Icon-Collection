@@ -60,39 +60,7 @@ const IconGallery = ({ searchTerm, setSearchTerm }) => {
       category: "ExternalLink Icon",
       component: "ExternalLinkIcon",
     },
-    {
-      id: 8,
-      name: " Heart Icon",
-      description: "",
-      category: " Heart Icon",
-      component: " HeartIcon",
-    },
-
-    {
-      id: 9,
-      name: "Fire Icon",
-      description: "",
-      category: " Fire Icon",
-      component: "FireIcon",
-    },
-
-    {
-      id: 10,
-      name: "Palette Icon",
-      description: "",
-      category: "Palette Icon",
-      component: "PaletteIcon",
-    },
-
-    {
-      id: 11,
-      name: "Sparkles Icon",
-      description: "",
-      category: "SparklesI con",
-      component: "SparklesIcon",
-    },
-
-    // Add  new icons here like this:
+    // Add your new icons here like this:
     // {
     //   id: 2,
     //   name: "Your Icon Name",
@@ -107,7 +75,10 @@ const IconGallery = ({ searchTerm, setSearchTerm }) => {
   const filteredIcons = icons.filter(
     (icon) =>
       icon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      icon.description.toLowerCase().includes(searchTerm.toLowerCase())
+      icon.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      icon.tags.some((tag) =>
+        tag.toLowerCase().includes(searchTerm.toLowerCase())
+      )
   );
 
   return (
@@ -198,6 +169,73 @@ const IconGallery = ({ searchTerm, setSearchTerm }) => {
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
         />
+
+        {/* New Icon Coming Soon Section */}
+        <motion.div
+          className="mt-20 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <div className="max-w-2xl mx-auto">
+            {/* Animated placeholder icon */}
+            <motion.div
+              className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center"
+              animate={{
+                scale: [1, 1.05, 1],
+                opacity: [0.7, 1, 0.7],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              <motion.div
+                className="w-12 h-12 bg-green-300 rounded-lg"
+                animate={{
+                  rotate: [0, 360],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              />
+            </motion.div>
+
+            {/* Coming Soon Text */}
+            <h3 className="text-3xl font-bold text-gray-800 mb-4 font-dinta">
+              New Icons Coming Soon...
+            </h3>
+            <p className="text-lg text-gray-600 mb-6 font-dinta">
+              We're constantly crafting new animated icons to expand your
+              collection. Stay tuned for more handcrafted components!
+            </p>
+
+            {/* Progress indicator */}
+            <div className="flex items-center justify-center gap-2 mb-8">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <div
+                className="w-2 h-2 bg-green-400 rounded-full animate-pulse"
+                style={{ animationDelay: "0.2s" }}
+              ></div>
+              <div
+                className="w-2 h-2 bg-green-300 rounded-full animate-pulse"
+                style={{ animationDelay: "0.4s" }}
+              ></div>
+            </div>
+
+            {/* Subscribe or follow hint */}
+            <div className="bg-white border border-green-200 rounded-xl p-4 shadow-sm">
+              <p className="text-sm text-gray-600">
+                💡 <span className="font-medium text-green-700">Tip:</span>{" "}
+                Follow our GitHub repository to get notified when new icons are
+                added!
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

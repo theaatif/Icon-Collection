@@ -2,6 +2,7 @@
 
 A beautifully crafted collection of animated, SVG-based React icons powered by **Framer Motion**. Built for modern UI/UX needs — fully customizable and plug-and-play.
 
+- LIVE : https://icon-collection.netlify.app/
 ---
 
 ## Folder Structure
@@ -76,7 +77,7 @@ function App() {
 
 ---
 
-##Props Reference
+## Props Reference
 
 | Prop            | Type              | Default       | Description                               |
 | --------------- | ----------------- | ------------- | ----------------------------------------- |
