@@ -75,10 +75,7 @@ const IconGallery = ({ searchTerm, setSearchTerm }) => {
   const filteredIcons = icons.filter(
     (icon) =>
       icon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      icon.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      icon.tags.some((tag) =>
-        tag.toLowerCase().includes(searchTerm.toLowerCase())
-      )
+      icon.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
