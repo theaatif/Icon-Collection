@@ -11,6 +11,7 @@ import { HeartIcon } from "../assets/Icons/ HeartIcon";
 import { FireIcon } from "../assets/Icons/FireIcon";
 import { PaletteIcon } from "../assets/Icons/PaletteIcon";
 import { SparklesIcon } from "../assets/Icons/SparklesIcon";
+import { ShoppingCartIcon } from "../assets/Icons/ShoppingCartIcon";
 
 // Import your new icon components here:
 // import { YourIconComponent } from "../assets/Icons/YourIconComponent";
@@ -114,10 +115,10 @@ const IconCard = ({ icon }) => {
               accentColor="#6366f1"
               fillColor="#6366f120"
             />
-          </div>                                          
+          </div>
         );
 
-        case " HeartIcon":
+      case " HeartIcon":
         return (
           <div className="flex justify-center items-center p-4">
             <HeartIcon
@@ -127,10 +128,10 @@ const IconCard = ({ icon }) => {
               accentColor="red"
               fillColor="#6366f120"
             />
-          </div>                                          
+          </div>
         );
 
-        case "FireIcon":
+      case "FireIcon":
         return (
           <div className="flex justify-center items-center p-4">
             <FireIcon
@@ -140,10 +141,10 @@ const IconCard = ({ icon }) => {
               accentColor="red"
               fillColor="#6366f120"
             />
-          </div>                                          
+          </div>
         );
 
-        case "PaletteIcon":
+      case "PaletteIcon":
         return (
           <div className="flex justify-center items-center p-4">
             <PaletteIcon
@@ -153,10 +154,10 @@ const IconCard = ({ icon }) => {
               accentColor="#6366f1"
               fillColor="#6366f120"
             />
-          </div>                                          
+          </div>
         );
 
-        case "SparklesIcon":
+      case "SparklesIcon":
         return (
           <div className="flex justify-center items-center p-4">
             <SparklesIcon
@@ -166,8 +167,82 @@ const IconCard = ({ icon }) => {
               accentColor="#6366f1"
               fillColor="#6366f120"
             />
-          </div>                                          
+          </div>
         );
+
+      case "HeartIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <HeartIcon
+              width={60}
+              height={60}
+              stroke="red"
+              accentColor="red"
+              fillColor="#10b98120"
+              strokeWidth={2}
+              glowEffect={true}
+            />
+          </div>
+        );
+
+      case "HeartIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <FireIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#f59e0b"
+              fillColor="#f59e0b20"
+              glowEffect={true}
+            />
+          </div>
+        );
+
+      case "PaletteIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <PaletteIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#8b5cf6"
+              fillColor="#8b5cf620"
+              glowEffect={true}
+            />
+          </div>
+        );
+
+        case "SparklesIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <SparklesIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#8b5cf6"
+              fillColor="#8b5cf620"
+              glowEffect={true}
+            />
+          </div>
+        );
+
+        case "ShoppingCartIcon":
+          return (
+            <div className="flex justify-center items-center p-4">
+              <ShoppingCartIcon
+                width={60}
+                height={60}
+                stroke="#ffffff"
+                accentColor="#8b5cf6"
+                fillColor="#8b5cf620"
+                glowEffect={true}
+              />
+            </div>
+          );
+  
+
+      
 
       // Add  new icon cases here like this:
       // case "YourIconComponent":

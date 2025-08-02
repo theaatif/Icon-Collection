@@ -60,6 +60,47 @@ const IconGallery = ({ searchTerm, setSearchTerm }) => {
       category: "ExternalLink Icon",
       component: "ExternalLinkIcon",
     },
+    {
+      id: 8,
+      name: "Heart Icon",
+      description: "A beautiful animated heart icon with pulsing effects",
+      category: "Emotions",
+      component: "HeartIcon",
+    },
+
+    {
+      id: 9,
+      name: "Fire Icon",
+      description: "",
+      category: "Emotions",
+      component: "FireIcon",
+    },
+    {
+      id: 10,
+      name: "Palette Icon",
+      description: "",
+      category: "Emotions",
+      component: "PaletteIcon",
+    },
+
+    {
+      id: 11,
+      name: "Sparkles Icon",
+      description: "",
+      category: "Emotions",
+      component: "SparklesIcon",
+    },
+
+    {
+      id: 12,
+      name: "ShoppingCart Icon",
+      description: "",
+      category: "Emotions",
+      component: "ShoppingCartIcon",
+    },
+
+ 
+
     // Add your new icons here like this:
     // {
     //   id: 2,
