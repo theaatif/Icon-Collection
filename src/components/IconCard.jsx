@@ -12,6 +12,12 @@ import { FireIcon } from "../assets/Icons/FireIcon";
 import { PaletteIcon } from "../assets/Icons/PaletteIcon";
 import { SparklesIcon } from "../assets/Icons/SparklesIcon";
 import { ShoppingCartIcon } from "../assets/Icons/ShoppingCartIcon";
+import { NotificationIcon } from "../assets/Icons/NotificationIcon";
+import { XIcon } from "../assets/Icons/XIcon";
+import { InstagramIcon } from "../assets/Icons/InstagramIcon";
+import { FacebookIcon } from "../assets/Icons/FacebookIcon";
+import { WhatsAppIcon } from "../assets/Icons/WhatsAppIcon";
+import { LinkedInIcon } from "../assets/Icons/LinkedInIcon";
 
 // Import your new icon components here:
 // import { YourIconComponent } from "../assets/Icons/YourIconComponent";
@@ -176,24 +182,10 @@ const IconCard = ({ icon }) => {
             <HeartIcon
               width={60}
               height={60}
-              stroke="red"
-              accentColor="red"
+              stroke="#10b981"
+              accentColor="#059669"
               fillColor="#10b98120"
               strokeWidth={2}
-              glowEffect={true}
-            />
-          </div>
-        );
-
-      case "HeartIcon":
-        return (
-          <div className="flex justify-center items-center p-4">
-            <FireIcon
-              width={60}
-              height={60}
-              stroke="#ffffff"
-              accentColor="#f59e0b"
-              fillColor="#f59e0b20"
               glowEffect={true}
             />
           </div>
@@ -213,7 +205,7 @@ const IconCard = ({ icon }) => {
           </div>
         );
 
-        case "SparklesIcon":
+      case "SparklesIcon":
         return (
           <div className="flex justify-center items-center p-4">
             <SparklesIcon
@@ -227,22 +219,120 @@ const IconCard = ({ icon }) => {
           </div>
         );
 
-        case "ShoppingCartIcon":
-          return (
-            <div className="flex justify-center items-center p-4">
-              <ShoppingCartIcon
-                width={60}
-                height={60}
-                stroke="#ffffff"
-                accentColor="#8b5cf6"
-                fillColor="#8b5cf620"
-                glowEffect={true}
-              />
-            </div>
-          );
-  
+      case "ShoppingCartIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <ShoppingCartIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#8b5cf6"
+              fillColor="#8b5cf620"
+              glowEffect={true}
+            />
+          </div>
+        );
 
-      
+      case "NotificationIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <NotificationIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#8b5cf6"
+              fillColor="#8b5cf620"
+              glowEffect={true}
+            />
+          </div>
+        );
+
+      case "XIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <XIcon
+              label="Follow"
+              labelSize={18}
+              labelColor="#1f2937"
+              labelWeight={600}
+              width={60}
+              height={60}
+              stroke="#10b981"
+              accentColor="black"
+              fillColor="black"
+              strokeWidth={2}
+              glowEffect={true}
+            />
+          </div>
+        );
+
+      case "InstagramIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <InstagramIcon
+              label="Follow"
+              labelSize={18}
+              labelColor="#1f2937"
+              labelWeight={600}
+              width={60}
+              height={60}
+              stroke="#10b981"
+              accentColor="black"
+              fillColor="black"
+              strokeWidth={2}
+              glowEffect={true}
+            />
+          </div>
+        );
+
+      case "FacebookIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <FacebookIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#1877F2"
+              fillColor="#1877F220"
+              labelSize={18}
+              labelColor="#1f2937"
+              labelWeight={600}
+              glowEffect={true}
+            />
+          </div>
+        );
+
+      case "WhatsAppIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <WhatsAppIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#25D366"
+              fillColor="#25D36620"
+              glowEffect={false}
+            />
+          </div>
+        );
+
+      case "LinkedInIcon":
+        return (
+          <div className="flex justify-center items-center p-4">
+            <LinkedInIcon
+              width={60}
+              height={60}
+              stroke="#ffffff"
+              accentColor="#0077B5"
+              fillColor="#0077B5"
+              connectionCount={250}
+              showConnectionBadge={true}
+              animationVariant="network"
+              springConfig={{ type: "spring", damping: 10, stiffness: 150 }}
+              glowEffect={true}
+            />
+          </div>
+        );
 
       // Add  new icon cases here like this:
       // case "YourIconComponent":

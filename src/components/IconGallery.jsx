@@ -71,36 +71,77 @@ const IconGallery = ({ searchTerm, setSearchTerm }) => {
     {
       id: 9,
       name: "Fire Icon",
-      description: "",
+      description: "A dynamic fire icon with burning animations",
       category: "Emotions",
       component: "FireIcon",
     },
     {
       id: 10,
       name: "Palette Icon",
-      description: "",
-      category: "Emotions",
+      description: "A creative palette icon with color mixing effects",
+      category: "Design",
       component: "PaletteIcon",
     },
 
     {
       id: 11,
       name: "Sparkles Icon",
-      description: "",
-      category: "Emotions",
+      description: "A magical sparkles icon with glitter effects",
+      category: "Design",
       component: "SparklesIcon",
     },
 
     {
       id: 12,
-      name: "ShoppingCart Icon",
-      description: "",
-      category: "Emotions",
+      name: "Shopping Cart Icon",
+      description: "A functional shopping cart icon for e-commerce",
+      category: "Commerce",
       component: "ShoppingCartIcon",
     },
 
- 
+    {
+      id: 13,
+      name: "Notification Icon",
+      description: "A notification bell icon with alert animations",
+      category: "Interface",
+      component: "NotificationIcon",
+    },
 
+    {
+      id: 14,
+      name: "X Icon",
+      description: "A social media X (Twitter) icon",
+      category: "Social",
+      component: "XIcon",
+    },
+    {
+      id: 15,
+      name: "Instagram Icon",
+      description: "A social media Instagram icon",
+      category: "Social",
+      component: "InstagramIcon",
+    },
+    {
+      id: 16,
+      name: "Facebook Icon",
+      description: "A social media Facebook icon",
+      category: "Social",
+      component: "FacebookIcon",
+    },
+    {
+      id: 17,
+      name: "WhatsApp Icon",
+      description: "A social media WhatsApp Icon",
+      category: "Social",
+      component: "WhatsAppIcon",
+    },
+    {
+      id: 18,
+      name: "LinkedIn Icon",
+      description: "A social media LinkedIn Icon",
+      category: "Social",
+      component: "LinkedInIcon",
+    },
     // Add your new icons here like this:
     // {
     //   id: 2,
